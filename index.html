@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritarth Dandapat - Full-Stack Developer & AI Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>KD</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./blog/index.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Kritarth Dandapat</span></h1>
+                <p class="hero-subtitle">Full-Stack Developer & AI Enthusiast</p>
+                <p class="hero-description">
+                    I am a full-stack developer with a recent focus on AI, driven by a deep passion for problem-solving across various fields. My strong foundation in mathematics fuels my analytical thinking and technical expertise.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="./assets/my-photo.jpeg" alt="Kritarth Dandapat" class="profile-image">
+                        <div class="profile-overlay">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Computer Science Student</h3>
+                        <p>University at Buffalo</p>
+                        <div class="profile-links">
+                            <a href="./assets/Resume.pdf" target="_blank" class="profile-link">
+                                <i class="fas fa-file-pdf"></i>
+                                Resume
+                            </a>
+                            <a href="./assets/transcript.pdf" target="_blank" class="profile-link">
+                                <i class="fas fa-graduation-cap"></i>
+                                Transcript
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="mailto:kritarth@buffalo.edu" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+17166120016" class="social-link">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="https://www.instagram.com/kritarth_dandapat/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Kritarth-Dandapat" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-space-container">
+                <!-- Floating Icons -->
+                <i class="fas fa-laptop-code space-icon icon-1"></i>
+                <i class="fas fa-bullseye space-icon icon-2"></i>
+                <i class="fas fa-rocket space-icon icon-3"></i>
+                <i class="fas fa-wrench space-icon icon-4"></i>
+                <div class="space-planet planet-1"></div>
+                <div class="space-planet planet-2"></div>
+                
+                <!-- Existing Content -->
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a full-stack developer with a recent focus on AI, driven by a deep passion for problem-solving across various fields. My strong foundation in mathematics, showcased by my success in numerous competitions, fuels my analytical thinking and technical expertise in software development.</p>
+                        <p>I chose Computer Science because I love tackling complex challenges and innovating in both technology and AI.</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-item">
+                            <h3>Education</h3>
+                            <h4>University at Buffalo, SUNY</h4>
+                            <p class="degree">Bachelors, Computer Science</p>
+                            <p class="minor">Minor: Statistics</p>
+                            <p class="dates">August 2023 - June 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Research Assistant</h3>
+                        <h4>University at Buffalo</h4>
+                        <p class="dates">July 2024 - Present</p>
+                        <ul>
+                            <li>Developing models to provide accurate measurements for Orthodontic scoring using depth sensors</li>
+                            <li>Developing AI-driven models for a dental health application, enhancing diagnostic accuracy and user engagement</li>
+                            <li>Implementing features to visualize dental health progress and provide personalized recommendations</li>
+                            <li>Building mobile and web applications using React Native and React in collaboration with Professor Xu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Tutor & Peer-Assisted Leader</h3>
+                        <h4>Tutoring & Academic Support Services, University at Buffalo</h4>
+                        <p class="dates">August 2024 - Present</p>
+                        <ul>
+                            <li>Conducting two interactive 1-hour sessions per week, improving students' understanding of Statistics by 30% based on quiz performance and feedback</li>
+                            <li>Providing in-depth explanations, answering student queries, and reinforcing key concepts during PAL sessions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Founder & Vice President (NSDC)</h3>
+                        <h4>UB National Student Data Corps</h4>
+                        <p class="dates">October 2023 - May 2024</p>
+                        <ul>
+                            <li>Led the development and launch of the NSDC website, improving event coordination and communication</li>
+                            <li>Organized and facilitated teamwork for website co-development, ensuring effective planning and execution of events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Notable Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>People Counting using CSRNet</h3>
+                    <p>Developed a deep learning-based system for accurate people counting in dense crowd scenarios. Implemented the CSRNet architecture to handle occlusions and improve detection robustness.</p>
+                    <div class="project-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">CSRNet</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Human Emotion Detection</h3>
+                    <p>Engineered an emotion detection system leveraging CNN, ResNet-34, and Vision Transformer (ViT) to classify human emotions from images. Achieved 87.5% accuracy.</p>
+                    <div class="project-tags">
+                        <span class="tag">CNN</span>
+                        <span class="tag">ResNet</span>
+                        <span class="tag">Vision Transformer</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Pathfinding Visualizer</h3>
+                    <p>Developed an interactive pathfinding visualizer in Python using Pygame, implementing the A* search algorithm for real-time visualization with customizable grid-based interface.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pygame</span>
+                        <span class="tag">A* Algorithm</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Personalized Student Shell (PSS)</h3>
+                    <p>Designed a command-line shell to enhance student workflow with custom aliases, command history, auto-completion, code execution, tutorials, and gamification elements.</p>
+                    <div class="project-tags">
+                        <span class="tag">Shell</span>
+                        <span class="tag">CLI</span>
+                        <span class="tag">Gamification</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>UB Hacking Classifier Web App</h3>
+                    <p>Co-developed Classifier Web App during a hackathon, focusing on backend and database architecture. Built responsive front-end using ReactJS, MUI, and CSS.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">MUI</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid-container">
+                <div class="skills-grid">
+                    <!-- Row 1 -->
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span class="skill-name">Python</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span class="skill-name">JavaScript</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span class="skill-name">React</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span class="skill-name">Node.js</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"><span class="skill-name">Django</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span class="skill-name">PyTorch</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span class="skill-name">TensorFlow</span></div>
+
+                    <!-- Row 2 -->
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span class="skill-name">HTML5</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span class="skill-name">CSS3</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS"><span class="skill-name">Tailwind</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span class="skill-name">MongoDB</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL"><span class="skill-name">SQL</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span class="skill-name">Firebase</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span class="skill-name">Git</span></div>
+
+                    <!-- Row 3 -->
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span class="skill-name">Java</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span class="skill-name">C++</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"><span class="skill-name">Express</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span class="skill-name">Figma</span></div>
+                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" alt="Rust"><span class="skill-name">Rust</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts Section -->
+    <section class="recent-blogs">
+        <div class="container">
+            <h2 class="section-title">Recent Blog Posts</h2>
+            <div class="recent-blogs-grid" id="recent-blogs-grid">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+            <div class="recent-blogs-footer">
+                <a href="./blog/index.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-right"></i>
+                    View All Posts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section class="honors">
+        <div class="container">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="honors-grid">
+                <div class="honor-card">
+                    <div class="honor-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Cybersecurity Excellence</h3>
+                    <p>Qualified for Top 100 in the World, Northeastern Cybersecurity C2C Finals, 2025</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Collegiate Lockdown</h3>
+                    <p>Top Two Teams Representing UB, Placed 4th in Finals, 2025</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Dean's List, University at Buffalo (Fall 2023, Spring 2024 & Fall 2024)</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Presidential Scholarship</h3>
+                    <p>Awarded $15,000 per annum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Credentials</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Machine Learning Specialization</h3>
+                    <p>Stanford University & DeepLearning.AI (Coursera)</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/MLSPECIALIZATION" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deep Learning Specialization</h3>
+                    <p>Stanford University & DeepLearning.AI (Coursera)</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/DLSPECIALIZATION" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>PyTorch for Deep Learning</h3>
+                    <p>Udemy Certificate</p>
+                    <a href="https://www.udemy.com/certificate/PYTORCH_CERT/" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Deep Learning Masterclass</h3>
+                    <p>TensorFlow 2, Neural.ai</p>
+                    <a href="https://neural.ai/certificate/DL_MASTERCLASS" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Django Masterclass</h3>
+                    <p>Tim Buchalka (Udemy Certificate)</p>
+                    <a href="https://www.udemy.com/certificate/DJANGO_CERT/" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js, Express, MongoDB</h3>
+                    <p>Jonas Schmedtmann (Udemy Certificate)</p>
+                    <a href="https://www.udemy.com/certificate/NODEJS_CERT/" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>The Ultimate React Course 2023</h3>
+                    <p>Jonas Schmedtmann (Udemy Certificate)</p>
+                    <a href="https://www.udemy.com/certificate/REACT_CERT/" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Programming Masterclass</h3>
+                    <p>Tim Buchalka (Udemy Certificate)</p>
+                    <a href="https://www.udemy.com/certificate/PYTHON_CERT/" target="_blank" class="certificate-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Publications Section -->
+    <section class="publications">
+        <div class="container">
+            <h2 class="section-title">Upcoming Publications</h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>OralScan AI Paper</h3>
+                    <p class="authors">Puru Soni, K. Dandapat, A. Gherardi, W. Bo, Wenyao Xu</p>
+                    <p class="journal">Planned submission to PLOS Digital Health, 2025</p>
+                    <div class="publication-status">
+                        <span class="status-badge">In Progress</span>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>OralScan User Study Paper</h3>
+                    <p class="authors">Puru Soni, K. Dandapat, A. Gherardi, W. Bo, Wenyao Xu</p>
+                    <p class="journal">Planned submission to PLOS Digital Health, 2025</p>
+                    <div class="publication-status">
+                        <span class="status-badge">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:kritarth@buffalo.edu">kritarth@buffalo.edu</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+17166120016">+1 (716) 612 0016</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Social Media</h3>
+                            <p>
+                                <a href="https://www.instagram.com/kritarth_dandapat/" target="_blank">Instagram</a> | 
+                                <a href="https://github.com/Kritarth-Dandapat" target="_blank">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kritarth Dandapat. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

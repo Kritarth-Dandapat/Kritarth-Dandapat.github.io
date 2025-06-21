@@ -1,0 +1,141 @@
+{
+    "name": "Kritarth Dandapat",
+    "contact": {
+      "phone": "+1 (716) 612 0016",
+      "email": "kritarth@buffalo.edu",
+      "page": "https://www.acsu.buffalo.edu/-kritarth/"
+    },
+    "summary": "I am a full-stack developer with a recent focus on AI, driven by a deep passion for problem-solving across various fields.  My strong foundation in mathematics, showcased by my success in numerous competitions, fuels my analytical thinking and technical expertise in software development.  I chose Computer Science because I love tackling complex challenges and innovating in both technology and AI. ",
+    "education": {
+      "institution": "University at Buffalo, the State University of New York (SUNY)",
+      "dates": "August 2023 - June 2026",
+      "degree": "Bachelors, Computer Science",
+      "minor": "Statistics"
+    },
+    "experience": [
+      {
+        "title": "Research Assistant",
+        "organization": "University at Buffalo",
+        "dates": "July 2024 - Present",
+        "details": [
+          "Developing models to provide accurate measurements for Orthodontic scoring using depth sensors. ",
+          "Developing AI-driven models for a dental health application, enhancing diagnostic accuracy and user engagement. ",
+          "Implementing features to visualize dental health progress and provide personalized recommendations. ",
+          "Building mobile and web applications using React Native and React in collaboration with Professor Xu. "
+        ]
+      },
+      {
+        "title": "Tutor & Peer-Assisted Leader",
+        "organization": "Tutoring & Academic Support Services, University at Buffalo",
+        "dates": "August 2024 - Present",
+        "details": [
+          "Conducting two interactive 1-hour sessions per week, improving students' understanding of Statistics by 30% based on quiz performance and feedback. ",
+          "Providing in-depth explanations, answering student queries, and reinforcing key concepts during PAL sessions. "
+        ]
+      },
+      {
+        "title": "Founder & Vice President (NSDC)",
+        "organization": "UB National Student Data Corps",
+        "dates": "October 2023 - May 2024",
+        "details": [
+          "Led the development and launch of the NSDC website, improving event coordination and communication. ",
+          "Organized and facilitated teamwork for website co-development, ensuring effective planning and execution of events. "
+        ]
+      }
+    ],
+    "notable_projects": [
+      {
+        "name": "People Counting using CSRNet",
+        "details": [
+          "Developed a deep learning-based system for accurate people counting in dense crowd scenarios. ",
+          "Implemented the CSRNet architecture to handle occlusions and improve detection robustness. ",
+          "Achieved high accuracy and scalability for real-world applications in smart cities, retail analytics, security, and event management. "
+        ]
+      },
+      {
+        "name": "Human Emotion Detection using Vision Transformers and CNN",
+        "details": [
+          "Engineered an emotion detection system leveraging CNN, ResNet-34, and Vision Transformer (ViT) to classify human emotions from images. ",
+          "Achieved 87.5% accuracy, showcasing the effectiveness of hybrid deep learning architectures. "
+        ]
+      },
+      {
+        "name": "Pathfinding Visualizer using A* Algorithm",
+        "details": [
+          "Developed an interactive pathfinding visualizer in Python using Pygame, implementing the A* search algorithm for real-time visualization. ",
+          "Created a customizable grid-based interface to enhance user interaction and learning experience. ",
+          "Demonstrated expertise in algorithmic problem-solving, GUI design, and Python-based application development. "
+        ]
+      },
+      {
+        "name": "Personalized Student Shell (PSS)",
+        "details": [
+          "Designed a command-line shell to enhance student workflow, task management, and learning efficiency. ",
+          "Integrated features such as custom aliases, command history, auto-completion, code execution, tutorials, error suggestions, and API integrations. ",
+          "Added gamification elements like command challenges and leaderboards to promote continuous learning. "
+        ]
+      },
+      {
+        "name": "UB Hacking Classifier Web App",
+        "details": [
+          "Co-developed Classifier Web App (https://ubclassifier.web.app/) during a hackathon, focusing on backend and database architecture. ",
+          "Contributed to building a responsive front-end using ReactJS, MUI, and CSS, ensuring a seamless user experience. "
+        ]
+      }
+    ],
+    "honors_and_awards": [
+      "Qualified for Top 100 in the World, Northeastern Cybersecurity C2C Finals, 2025 ",
+      "Qualified as One of the Top Two Teams Representing UB, Collegiate Lockdown Cybersecurity Competition (Placed 4th in the Finals), 2025 ",
+      "Dean's List, University at Buffalo (Fall 2023, Spring 2024 & Fall 2024) ",
+      "Presidential Scholarship, Awarded $15,000 per annum ",
+      "Secured All India Rank 8822, JEE (Advanced) 2023 ",
+      "Secured 97.0735 percentile, JEE (Main) 2023 ",
+      "Secured All India Rank 761, Manipal Entrance Test 2023 ",
+      "Secured 233/390, BITSAT 2023 Examination ",
+      "Secured 99.3612 percentile, MHT-CET 2023 Examination "
+    ],
+    "certificates": [
+      "Machine Learning Specialization, Stanford University & DeepLearning.AI (Coursera) ",
+      "Deep Learning Specialization, Stanford University & DeepLearning.AI (Coursera) ",
+      "PyTorch for Deep Learning and Machine Learning (Udemy Certificate) ",
+      "Deep Learning Masterclass with TensorFlow 2, Neural.ai ",
+      "Django Masterclass, Tim Buchalka (Udemy Certificate) ",
+      "Node.js, Express, MongoDB & More, Jonas Schmedtmann (Udemy Certificate) ",
+      "The Ultimate React Course 2023, Jonas Schmedtmann (Udemy Certificate) ",
+      "Learn Python Programming Masterclass, Tim Buchalka (Udemy Certificate) "
+    ],
+    "upcoming": [
+      {
+        "title": "OralScan AI Paper",
+        "authors": "Puru Soni, K. Dandapat, A. Gherardi, W. Bo, Wenyao Xu",
+        "submission": "Planned submission to PLOS Digital Health, 2025. "
+      },
+      {
+        "title": "OralScan User Study Paper",
+        "authors": "Puru Soni, K. Dandapat, A. Gherardi, W. Bo, Wenyao Xu",
+        "submission": "Planned submission to PLOS Digital Health, 2025. "
+      }
+    ],
+    "skills": {
+      "programming_languages": {
+        "proficient": ["Python", "JavaScript"],
+        "other": ["Java", "HTML/CSS", "C/C++"],
+        "beginner": ["Rust"]
+      },
+      "technologies": [
+        "React",
+        "React Native",
+        "Django",
+        "Node.js",
+        "Express",
+        "Firebase",
+        "Tailwind CSS",
+        "Figma",
+        "SQL",
+        "MongoDB",
+        "Git/Git-Hub",
+        "PyTorch",
+        "TensorFlow"
+      ]
+    }
+  }

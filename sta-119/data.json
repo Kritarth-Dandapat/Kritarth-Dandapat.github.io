@@ -1,0 +1,377 @@
+{
+  "generalResources": [
+    {
+      "name": "Z-Chart.pdf",
+      "path": "resources/Z-Chart.pdf",
+      "type": "pdf",
+      "size": "245KB",
+      "displayName": "Z Chart"
+    },
+    {
+      "name": "t-table.pdf",
+      "path": "resources/t-table.pdf",
+      "type": "pdf",
+      "size": "180KB",
+      "displayName": "T Table"
+    },
+    {
+      "name": "Chi-Square.pdf",
+      "path": "resources/Chi-Square.pdf",
+      "type": "pdf",
+      "size": "156KB",
+      "displayName": "Chi Square"
+    },
+    {
+      "name": "Binomial-Poisson-Chart.pdf",
+      "path": "resources/Binomial-Poisson-Chart.pdf",
+      "type": "pdf",
+      "size": "320KB",
+      "displayName": "Binomial & Poisson Chart"
+    }
+  ],
+  "sessions": {
+    "fall2025": [],
+    "spring2025": [
+      {
+        "date": "2025-05-07",
+        "title": "Final Review Session",
+        "files": [
+          {
+            "name": "May 7th - Final Review Session - Worksheet.pdf",
+            "path": "spring2025/May 7th - Final Review Session - Worksheet.pdf",
+            "type": "pdf",
+            "size": "1.2MB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "May 7th - Final Review Session - Session Notes.pdf",
+            "path": "spring2025/May 7th - Final Review Session - Session Notes.pdf",
+            "type": "pdf",
+            "size": "890KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-14",
+        "title": "Confidence Intervals",
+        "files": [
+          {
+            "name": "April 14th - Confidence Intervals - Worksheet.pdf",
+            "path": "spring2025/April 14th - Confidence Intervals - Worksheet.pdf",
+            "type": "pdf",
+            "size": "756KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "April 14th - Confidence Intervals - Session Notes.pdf",
+            "path": "spring2025/April 14th - Confidence Intervals - Session Notes.pdf",
+            "type": "pdf",
+            "size": "1.1MB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-09",
+        "title": "Confidence Intervals",
+        "files": [
+          {
+            "name": "April 9th - Confidence Intervals - Worksheet.pdf",
+            "path": "spring2025/April 9th - Confidence Intervals - Worksheet.pdf",
+            "type": "pdf",
+            "size": "678KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "April 9th - Confidence Intervals - Session Notes.pdf",
+            "path": "spring2025/April 9th - Confidence Intervals - Session Notes.pdf",
+            "type": "pdf",
+            "size": "945KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-02",
+        "title": "Midterm Review",
+        "files": [
+          {
+            "name": "April 2nd - Midterm Review - Worksheet.pdf",
+            "path": "spring2025/April 2nd - Midterm Review - Worksheet.pdf",
+            "type": "pdf",
+            "size": "1.5MB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "April 2nd - Midterm Review - Session Notes.pdf",
+            "path": "spring2025/April 2nd - Midterm Review - Session Notes.pdf",
+            "type": "pdf",
+            "size": "1.2MB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-31",
+        "title": "Confidence Intervals",
+        "files": [
+          {
+            "name": "March 31st - Confidence Intervals - Worksheet.pdf",
+            "path": "spring2025/March 31st - Confidence Intervals - Worksheet.pdf",
+            "type": "pdf",
+            "size": "823KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "March 31st - Confidence Intervals - Session Notes.pdf",
+            "path": "spring2025/March 31st - Confidence Intervals - Session Notes.pdf",
+            "type": "pdf",
+            "size": "987KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-26",
+        "title": "Applications of Normal Distributions (Again)",
+        "files": [
+          {
+            "name": "March 26th - Applications of Normal Distributions (Again) - Worksheet.pdf",
+            "path": "spring2025/March 26th - Applications of Normal Distributions (Again) - Worksheet.pdf",
+            "type": "pdf",
+            "size": "654KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "March 26th - Applications of Normal Distributions (Again) - Session Notes.pdf",
+            "path": "spring2025/March 26th - Applications of Normal Distributions (Again) - Session Notes.pdf",
+            "type": "pdf",
+            "size": "876KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-24",
+        "title": "Applications of Normal Distributions",
+        "files": [
+          {
+            "name": "March 24th - Applications of Normal Distributions - Worksheet.pdf",
+            "path": "spring2025/March 24th - Applications of Normal Distributions - Worksheet.pdf",
+            "type": "pdf",
+            "size": "712KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "March 24th - Applications of Normal Distributions - Session Notes.pdf",
+            "path": "spring2025/March 24th - Applications of Normal Distributions - Session Notes.pdf",
+            "type": "pdf",
+            "size": "934KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-12",
+        "title": "K-Problems, Insurance Problems, 95-5% Split – Binomial",
+        "files": [
+          {
+            "name": "March 12th - K-Problems, Insurance Problems, 95-5% Split – Binomial - Worksheet.pdf",
+            "path": "spring2025/March 12th - K-Problems, Insurance Problems, 95-5% Split – Binomial - Worksheet.pdf",
+            "type": "pdf",
+            "size": "567KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "March 12th - K-Problems, Insurance Problems, 95-5% Split – Binomial - Session Notes.pdf",
+            "path": "spring2025/March 12th - K-Problems, Insurance Problems, 95-5% Split – Binomial - Session Notes.pdf",
+            "type": "pdf",
+            "size": "789KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-05",
+        "title": "Quiz Prep ! (Insurance Problems)",
+        "files": [
+          {
+            "name": "March 5th - Quiz Prep ! (Insurance Problems) - Worksheet.pdf",
+            "path": "spring2025/March 5th - Quiz Prep ! (Insurance Problems) - Worksheet.pdf",
+            "type": "pdf",
+            "size": "445KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "March 5th - Quiz Prep ! (Insurance Problems) - Session Notes.pdf",
+            "path": "spring2025/March 5th - Quiz Prep ! (Insurance Problems) - Session Notes.pdf",
+            "type": "pdf",
+            "size": "623KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-26",
+        "title": "Binomeal and Possion Problems Practice",
+        "files": [
+          {
+            "name": "February 26th - Binomeal and Possion Problems Practice - Worksheet.pdf",
+            "path": "spring2025/February 26th - Binomeal and Possion Problems Practice - Worksheet.pdf",
+            "type": "pdf",
+            "size": "534KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 26th - Binomeal and Possion Problems Practice - Session Notes.pdf",
+            "path": "spring2025/February 26th - Binomeal and Possion Problems Practice - Session Notes.pdf",
+            "type": "pdf",
+            "size": "745KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-24",
+        "title": "CDF Practice",
+        "files": [
+          {
+            "name": "February 24th - CDF Practice - Worksheet.pdf",
+            "path": "spring2025/February 24th - CDF Practice - Worksheet.pdf",
+            "type": "pdf",
+            "size": "389KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 24th - CDF Practice - Session Notes.pdf",
+            "path": "spring2025/February 24th - CDF Practice - Session Notes.pdf",
+            "type": "pdf",
+            "size": "567KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-18",
+        "title": "Practice Before Midterm",
+        "files": [
+          {
+            "name": "February 18th - Practice Before Midterm - Worksheet.pdf",
+            "path": "spring2025/February 18th - Practice Before Midterm - Worksheet.pdf",
+            "type": "pdf",
+            "size": "1.1MB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 18th - Practice Before Midterm - Session Notes.pdf",
+            "path": "spring2025/February 18th - Practice Before Midterm - Session Notes.pdf",
+            "type": "pdf",
+            "size": "1.3MB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-17",
+        "title": "DNA Problems and Machine Problems",
+        "files": [
+          {
+            "name": "February 17th - DNA Problems and Machine Problems - Worksheet.pdf",
+            "path": "spring2025/February 17th - DNA Problems and Machine Problems - Worksheet.pdf",
+            "type": "pdf",
+            "size": "678KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 17th - DNA Problems and Machine Problems - Session Notes.pdf",
+            "path": "spring2025/February 17th - DNA Problems and Machine Problems - Session Notes.pdf",
+            "type": "pdf",
+            "size": "892KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-12",
+        "title": "Quiz Prep: Basic Statistics & Condtional Probablity",
+        "files": [
+          {
+            "name": "February 12th - Quiz Prep: Basic Statistics & Condtional Probablity - Worksheet.pdf",
+            "path": "spring2025/February 12th - Quiz Prep: Basic Statistics & Condtional Probablity - Worksheet.pdf",
+            "type": "pdf",
+            "size": "456KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 12th - Quiz Prep: Basic Statistics & Condtional Probablity - Session Notes.pdf",
+            "path": "spring2025/February 12th - Quiz Prep: Basic Statistics & Condtional Probablity - Session Notes.pdf",
+            "type": "pdf",
+            "size": "634KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-10",
+        "title": "Condtional Probablity",
+        "files": [
+          {
+            "name": "February 10th - Condtional Probablity - Worksheet.pdf",
+            "path": "spring2025/February 10th - Condtional Probablity - Worksheet.pdf",
+            "type": "pdf",
+            "size": "523KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 10th - Condtional Probablity - Session Notes.pdf",
+            "path": "spring2025/February 10th - Condtional Probablity - Session Notes.pdf",
+            "type": "pdf",
+            "size": "712KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-04",
+        "title": "Basic Data Analysis & Probablity",
+        "files": [
+          {
+            "name": "February 4th - Basic Data Analysis & Probablity - Worksheet.pdf",
+            "path": "spring2025/February 4th - Basic Data Analysis & Probablity - Worksheet.pdf",
+            "type": "pdf",
+            "size": "489KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 4th - Basic Data Analysis & Probablity - Session Notes.pdf",
+            "path": "spring2025/February 4th - Basic Data Analysis & Probablity - Session Notes.pdf",
+            "type": "pdf",
+            "size": "678KB",
+            "label": "Session Notes"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-03",
+        "title": "Chapter 2: Basic Data Analysis – Summary Statistics and Graphs",
+        "files": [
+          {
+            "name": "February 3rd - Chapter 2: Basic Data Analysis – Summary Statistics and Graphs - Worksheet.pdf",
+            "path": "spring2025/February 3rd - Chapter 2: Basic Data Analysis – Summary Statistics and Graphs - Worksheet.pdf",
+            "type": "pdf",
+            "size": "567KB",
+            "label": "Worksheet"
+          },
+          {
+            "name": "February 3rd - Chapter 2: Basic Data Analysis – Summary Statistics and Graphs - Session Notes.pdf",
+            "path": "spring2025/February 3rd - Chapter 2: Basic Data Analysis – Summary Statistics and Graphs - Session Notes.pdf",
+            "type": "pdf",
+            "size": "745KB",
+            "label": "Session Notes"
+          }
+        ]
+      }
+    ]
+  }
+} 
