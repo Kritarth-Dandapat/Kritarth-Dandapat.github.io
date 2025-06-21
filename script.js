@@ -1100,4 +1100,129 @@ function formatDate(dateString) {
         month: 'short',
         day: 'numeric'
     });
+}
+
+// Modal functionality for experience section
+function openModal(modalId) {
+    const modal = document.getElementById(modalId + '-modal');
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId + '-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+}
+
+// Project modal functionality (aliases for compatibility)
+function openProjectModal(modalId) {
+    openModal(modalId);
+}
+
+function closeProjectModal(modalId) {
+    const modal = document.getElementById(modalId + '-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Close modal when clicking outside of it (updated to handle both experience and project modals)
+window.onclick = function (event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+}
+
+// Close modal with Escape key (updated to handle both experience and project modals)
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+});
+
+// Toggle functions for projects and certificates
+function toggleProjects() {
+    const hiddenProjects = document.querySelectorAll('.hidden-project');
+    const button = document.getElementById('show-more-projects');
+    const icon = button.querySelector('i');
+
+    hiddenProjects.forEach(project => {
+        if (project.style.display === 'none' || project.style.display === '') {
+            project.style.display = 'block';
+            button.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less Projects';
+            button.classList.add('expanded');
+        } else {
+            project.style.display = 'none';
+            button.innerHTML = '<i class="fas fa-chevron-down"></i> Show More Projects';
+            button.classList.remove('expanded');
+        }
+    });
+}
+
+function toggleCertificates() {
+    const hiddenCertificates = document.querySelectorAll('.hidden-certificate');
+    const button = document.getElementById('show-more-certificates');
+    const icon = button.querySelector('i');
+
+    hiddenCertificates.forEach(certificate => {
+        if (certificate.style.display === 'none' || certificate.style.display === '') {
+            certificate.style.display = 'block';
+            button.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less Certificates';
+            button.classList.add('expanded');
+        } else {
+            certificate.style.display = 'none';
+            button.innerHTML = '<i class="fas fa-chevron-down"></i> Show More Certificates';
+            button.classList.remove('expanded');
+        }
+    });
+}
+
+function toggleExperiences() {
+    const hiddenExperiences = document.querySelectorAll('.hidden-experience');
+    const button = document.getElementById('show-more-experiences');
+
+    hiddenExperiences.forEach(experience => {
+        if (experience.style.display === 'none' || experience.style.display === '') {
+            experience.style.display = 'block';
+            button.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less Experience';
+            button.classList.add('expanded');
+        } else {
+            experience.style.display = 'none';
+            button.innerHTML = '<i class="fas fa-chevron-down"></i> Show More Experience';
+            button.classList.remove('expanded');
+        }
+    });
+}
+
+function toggleSkills() {
+    const hiddenSkills = document.querySelectorAll('.hidden-skill');
+    const button = document.getElementById('show-more-skills');
+    const icon = button.querySelector('i');
+
+    hiddenSkills.forEach(skill => {
+        skill.style.display = skill.style.display === 'inline-flex' ? 'none' : 'inline-flex';
+    });
+
+    if (hiddenSkills[0].style.display === 'inline-flex') {
+        button.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less Skills';
+        button.classList.add('expanded');
+    } else {
+        button.innerHTML = '<i class="fas fa-chevron-down"></i> Show More Skills';
+        button.classList.remove('expanded');
+    }
 } 

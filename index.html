@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kritarth Dandapat - Full-Stack Developer & AI Enthusiast</title>
+    <title>Kritarth Dandapat - AI Developer & Research Assistant</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -51,9 +51,9 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Kritarth Dandapat</span></h1>
-                <p class="hero-subtitle">Full-Stack Developer & AI Enthusiast</p>
+                <p class="hero-subtitle">AI Developer & Research Assistant</p>
                 <p class="hero-description">
-                    I am a full-stack developer with a recent focus on AI, driven by a deep passion for problem-solving across various fields. My strong foundation in mathematics fuels my analytical thinking and technical expertise.
+                    I am an AI developer with previous experience in full-stack development, driven by a deep passion for problem-solving and innovation in technology. My strong foundation in mathematics fuels my analytical thinking and technical expertise.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="profile-info">
-                        <h3>Computer Science Student</h3>
+                        <h3>AI Developer & Research Assistant</h3>
                         <p>University at Buffalo</p>
                         <div class="profile-links">
                             <a href="./assets/Resume.pdf" target="_blank" class="profile-link">
@@ -94,6 +94,15 @@
                             <a href="https://github.com/Kritarth-Dandapat" target="_blank" class="social-link">
                                 <i class="fab fa-github"></i>
                             </a>
+                            <a href="https://x.com/Kritarth25" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kritarth-dandapat/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://meritpages.com/kritarth" target="_blank" class="social-link">
+                                <i class="fas fa-award"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -117,8 +126,8 @@
                 <!-- Existing Content -->
                 <div class="about-content">
                     <div class="about-text">
-                        <p>I am a full-stack developer with a recent focus on AI, driven by a deep passion for problem-solving across various fields. My strong foundation in mathematics, showcased by my success in numerous competitions, fuels my analytical thinking and technical expertise in software development.</p>
-                        <p>I chose Computer Science because I love tackling complex challenges and innovating in both technology and AI.</p>
+                        <p>I am an AI developer with previous experience in full-stack development, driven by a deep passion for problem-solving and innovation in technology. My strong foundation in mathematics fuels my analytical thinking and technical expertise in software development.</p>
+                        <p>I am currently a Research Assistant at the University at Buffalo, developing AI-driven models for dental health applications and building mobile and web solutions. I am proficient in Python and JavaScript, and experienced with React, React Native, Django, PyTorch, and TensorFlow.</p>
                     </div>
                     <div class="education-card">
                         <div class="education-item">
@@ -138,11 +147,33 @@
     <section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
-            <div class="timeline">
+            <div class="timeline" id="experience-timeline">
                 <div class="timeline-item">
-                    <div class="timeline-content">
+                    <div class="timeline-content" onclick="openModal('peng-lab')">
+                        <h3>Undergraduate Researcher</h3>
+                        <h4>Peng Research Lab, University at Buffalo</h4>
+                        <p class="dates">May 2025 - Present</p>
+                        <ul>
+                            <li>Working on cutting-edge research at the intersection of AI, quantum computing, and energy systems</li>
+                            <li>Contributing to the lab's mission of advancing 🤖 + ⚛️ →⚡ + 🧪 technologies</li>
+                            <li>Collaborating with graduate students and faculty on innovative research projects</li>
+                        </ul>
+                        <div class="project-actions">
+                            <button class="learn-more-btn" onclick="event.stopPropagation(); openModal('peng-lab')">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </button>
+                            <a href="https://ubwp.buffalo.edu/jiayu-peng-lab/members/" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                                <i class="fas fa-globe"></i>
+                                Lab Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="openModal('research-assistant')">
                         <h3>Research Assistant</h3>
-                        <h4>University at Buffalo</h4>
+                        <h4>Embedded Sensing and Computing (ESC) Group, University at Buffalo</h4>
                         <p class="dates">July 2024 - Present</p>
                         <ul>
                             <li>Developing models to provide accurate measurements for Orthodontic scoring using depth sensors</li>
@@ -150,10 +181,20 @@
                             <li>Implementing features to visualize dental health progress and provide personalized recommendations</li>
                             <li>Building mobile and web applications using React Native and React in collaboration with Professor Xu</li>
                         </ul>
+                        <div class="project-actions">
+                            <button class="learn-more-btn" onclick="event.stopPropagation(); openModal('research-assistant')">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </button>
+                            <a href="https://cse.buffalo.edu/~wenyaoxu/esc.html" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                                <i class="fas fa-globe"></i>
+                                Lab Website
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
+                <div class="timeline-item hidden-experience">
+                    <div class="timeline-content" onclick="openModal('tutor')">
                         <h3>Tutor & Peer-Assisted Leader</h3>
                         <h4>Tutoring & Academic Support Services, University at Buffalo</h4>
                         <p class="dates">August 2024 - Present</p>
@@ -161,10 +202,20 @@
                             <li>Conducting two interactive 1-hour sessions per week, improving students' understanding of Statistics by 30% based on quiz performance and feedback</li>
                             <li>Providing in-depth explanations, answering student queries, and reinforcing key concepts during PAL sessions</li>
                         </ul>
+                        <div class="project-actions">
+                            <button class="learn-more-btn" onclick="event.stopPropagation(); openModal('tutor')">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </button>
+                            <a href="./sta-119/index.html" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                                <i class="fas fa-graduation-cap"></i>
+                                STA-119 Resources
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
+                <div class="timeline-item hidden-experience">
+                    <div class="timeline-content" onclick="openModal('nsdc')">
                         <h3>Founder & Vice President (NSDC)</h3>
                         <h4>UB National Student Data Corps</h4>
                         <p class="dates">October 2023 - May 2024</p>
@@ -172,8 +223,20 @@
                             <li>Led the development and launch of the NSDC website, improving event coordination and communication</li>
                             <li>Organized and facilitated teamwork for website co-development, ensuring effective planning and execution of events</li>
                         </ul>
+                        <div class="project-actions">
+                            <button class="learn-more-btn" onclick="event.stopPropagation(); openModal('nsdc')">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="show-more-container">
+                <button class="btn btn-secondary" id="show-more-experiences" onclick="toggleExperiences()">
+                    <i class="fas fa-chevron-down"></i>
+                    Show More Experience
+                </button>
             </div>
         </div>
     </section>
@@ -182,8 +245,57 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Notable Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" onclick="openProjectModal('marine-guardian')">
+                    <div class="project-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Marine Guardian: Ship Detection in Satellite Imagery</h3>
+                    <p>Developed a computer vision system for detecting ships in satellite imagery using first principles of computer vision. Implemented roundness-based classification achieving 98.72% accuracy with MobileNetV2, and created a fast detection algorithm using geometric properties for real-time maritime monitoring.</p>
+                    <div class="project-tags">
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Satellite Imagery</span>
+                        <span class="tag">EfficientNet</span>
+                        <span class="tag">MobileNetV2</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('marine-guardian')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://www.kaggle.com/datasets/rhammell/ships-in-satellite-imagery" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fas fa-database"></i>
+                            Dataset
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openProjectModal('oralscan')">
+                    <div class="project-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>OralScan: AI-Powered Dental Care</h3>
+                    <p>Developed a mobile and web app for accessible, AI-driven oral health diagnostics and care recommendations, empowering seniors and underserved communities with real-time, at-home dental screening.</p>
+                    <div class="project-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Mobile App</span>
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('oralscan')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://oralscan.health/" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fas fa-globe"></i>
+                            Website
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openProjectModal('people-counting')">
                     <div class="project-icon">
                         <i class="fas fa-users"></i>
                     </div>
@@ -194,8 +306,18 @@
                         <span class="tag">CSRNet</span>
                         <span class="tag">Computer Vision</span>
                     </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('people-counting')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Kritarth-Dandapat/people-counting-csrnet" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card hidden-project" onclick="openProjectModal('emotion-detection')">
                     <div class="project-icon">
                         <i class="fas fa-smile"></i>
                     </div>
@@ -206,8 +328,18 @@
                         <span class="tag">ResNet</span>
                         <span class="tag">Vision Transformer</span>
                     </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('emotion-detection')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Kritarth-Dandapat/emotion-detection" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card hidden-project" onclick="openProjectModal('pathfinding')">
                     <div class="project-icon">
                         <i class="fas fa-route"></i>
                     </div>
@@ -218,8 +350,18 @@
                         <span class="tag">Pygame</span>
                         <span class="tag">A* Algorithm</span>
                     </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('pathfinding')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Kritarth-Dandapat/pathfinding-visualizer" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card hidden-project" onclick="openProjectModal('pss')">
                     <div class="project-icon">
                         <i class="fas fa-terminal"></i>
                     </div>
@@ -230,8 +372,18 @@
                         <span class="tag">CLI</span>
                         <span class="tag">Gamification</span>
                     </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('pss')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Kritarth-Dandapat/personalized-student-shell" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card hidden-project" onclick="openProjectModal('ub-hacking')">
                     <div class="project-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
@@ -242,58 +394,137 @@
                         <span class="tag">MUI</span>
                         <span class="tag">Firebase</span>
                     </div>
+                    <div class="project-actions">
+                        <button class="learn-more-btn" onclick="event.stopPropagation(); openProjectModal('ub-hacking')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Kritarth-Dandapat/ub-hacking-classifier" target="_blank" class="github-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div class="show-more-container">
+                <button class="btn btn-secondary" id="show-more-projects" onclick="toggleProjects()">
+                    <i class="fas fa-chevron-down"></i>
+                    Show More Projects
+                </button>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills-compact">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid-container">
-                <div class="skills-grid">
-                    <!-- Row 1 -->
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span class="skill-name">Python</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span class="skill-name">JavaScript</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span class="skill-name">React</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span class="skill-name">Node.js</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"><span class="skill-name">Django</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span class="skill-name">PyTorch</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span class="skill-name">TensorFlow</span></div>
+            <div class="skills-compact-grid">
+                <div class="skills-compact-category">
+                    <h3>Programming</h3>
+                    <div class="skills-compact-items">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+                        <span class="skill-tag hidden-skill"><i class="fab fa-rust"></i> Rust</span>
+                    </div>
+                </div>
+                <div class="skills-compact-category">
+                    <h3>Web & AI</h3>
+                    <div class="skills-compact-items">
+                        <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fas fa-brain"></i> PyTorch</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> TensorFlow</span>
+                        <span class="skill-tag hidden-skill"><i class="fab fa-python"></i> Django</span>
+                    </div>
+                </div>
+                <div class="skills-compact-category">
+                    <h3>Databases & Tools</h3>
+                    <div class="skills-compact-items">
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more-container">
+                <button class="btn btn-secondary" id="show-more-skills" onclick="toggleSkills()">
+                    <i class="fas fa-chevron-down"></i>
+                    Show More Skills
+                </button>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Row 2 -->
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span class="skill-name">HTML5</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span class="skill-name">CSS3</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS"><span class="skill-name">Tailwind</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span class="skill-name">MongoDB</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL"><span class="skill-name">SQL</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span class="skill-name">Firebase</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span class="skill-name">Git</span></div>
-
-                    <!-- Row 3 -->
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span class="skill-name">Java</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span class="skill-name">C++</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"><span class="skill-name">Express</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span class="skill-name">Figma</span></div>
-                    <div class="skill-logo-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" alt="Rust"><span class="skill-name">Rust</span></div>
+    <!-- Competitions Section -->
+    <section class="competitions">
+        <div class="container">
+            <h2 class="section-title">Competitions & Challenges</h2>
+            <div class="competitions-grid">
+                <div class="competition-card">
+                    <div class="competition-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Russell L. Agrusa CSE Student Innovation Competition</h3>
+                    <p class="competition-authors">Puru Soni, Kritarth Dandapat, Alexander Gherardi, Wei Bo, Rui Li, Wenyao Xu</p>
+                    <p class="competition-details">University at Buffalo, November 2024</p>
+                    <div class="competition-role">
+                        <span class="role-badge">Team Member</span>
+                        <span class="project-name">OralScan</span>
+                    </div>
+                </div>
+                <div class="competition-card">
+                    <div class="competition-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Aging Innovations Challenge</h3>
+                    <p class="competition-authors">Puru Soni, Kritarth Dandapat, Alexander Gherardi, Wei Bo, Rui Li, Wenyao Xu</p>
+                    <p class="competition-details">University at Buffalo, November 2024</p>
+                    <div class="competition-role">
+                        <span class="role-badge">Team Member</span>
+                        <span class="project-name">OralScan</span>
+                    </div>
+                </div>
+                <div class="competition-card">
+                    <div class="competition-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Community Champions for Disability Health Challenge</h3>
+                    <p class="competition-authors">Wei Bo, Alexander Gherardi, Kritarth Dandapat, Puru Soni, Rui Li, Wenyao Xu</p>
+                    <p class="competition-details">October 2024</p>
+                    <div class="competition-role">
+                        <span class="role-badge">PI</span>
+                        <span class="project-name">OralScan</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Recent Blog Posts Section -->
-    <section class="recent-blogs">
+    <!-- Research Presentations Section -->
+    <section class="presentations">
         <div class="container">
-            <h2 class="section-title">Recent Blog Posts</h2>
-            <div class="recent-blogs-grid" id="recent-blogs-grid">
-                <!-- Blog posts will be dynamically loaded here -->
-            </div>
-            <div class="recent-blogs-footer">
-                <a href="./blog/index.html" class="btn btn-secondary">
-                    <i class="fas fa-arrow-right"></i>
-                    View All Posts
-                </a>
+            <h2 class="section-title">Research Presentations</h2>
+            <div class="presentations-grid">
+                <div class="presentation-card">
+                    <div class="presentation-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Oral Presentation and Demo</h3>
+                    <p class="presentation-details">CTSI Research Group of Doctors, Nurses, and Medical Students</p>
+                    <p class="presentation-date">April 2024</p>
+                </div>
+                <div class="presentation-card">
+                    <div class="presentation-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Oral Presentation</h3>
+                    <p class="presentation-details">SUNY Undergraduate Research Conference (SURC)</p>
+                    <p class="presentation-date">April 2024</p>
+                </div>
             </div>
         </div>
     </section>
@@ -339,7 +570,7 @@
     <section class="certificates">
         <div class="container">
             <h2 class="section-title">Certificates & Credentials</h2>
-            <div class="certificates-grid">
+            <div class="certificates-grid" id="certificates-grid">
                 <div class="certificate-card">
                     <div class="certificate-icon">
                         <i class="fas fa-graduation-cap"></i>
@@ -373,7 +604,7 @@
                         View Certificate
                     </a>
                 </div>
-                <div class="certificate-card">
+                <div class="certificate-card hidden-certificate">
                     <div class="certificate-icon">
                         <i class="fas fa-network-wired"></i>
                     </div>
@@ -384,7 +615,7 @@
                         View Certificate
                     </a>
                 </div>
-                <div class="certificate-card">
+                <div class="certificate-card hidden-certificate">
                     <div class="certificate-icon">
                         <i class="fab fa-python"></i>
                     </div>
@@ -395,7 +626,7 @@
                         View Certificate
                     </a>
                 </div>
-                <div class="certificate-card">
+                <div class="certificate-card hidden-certificate">
                     <div class="certificate-icon">
                         <i class="fab fa-node-js"></i>
                     </div>
@@ -406,7 +637,7 @@
                         View Certificate
                     </a>
                 </div>
-                <div class="certificate-card">
+                <div class="certificate-card hidden-certificate">
                     <div class="certificate-icon">
                         <i class="fab fa-react"></i>
                     </div>
@@ -417,7 +648,7 @@
                         View Certificate
                     </a>
                 </div>
-                <div class="certificate-card">
+                <div class="certificate-card hidden-certificate">
                     <div class="certificate-icon">
                         <i class="fab fa-python"></i>
                     </div>
@@ -428,6 +659,12 @@
                         View Certificate
                     </a>
                 </div>
+            </div>
+            <div class="show-more-container">
+                <button class="btn btn-secondary" id="show-more-certificates" onclick="toggleCertificates()">
+                    <i class="fas fa-chevron-down"></i>
+                    Show More Certificates
+                </button>
             </div>
         </div>
     </section>
@@ -495,7 +732,10 @@
                             <h3>Social Media</h3>
                             <p>
                                 <a href="https://www.instagram.com/kritarth_dandapat/" target="_blank">Instagram</a> | 
-                                <a href="https://github.com/Kritarth-Dandapat" target="_blank">GitHub</a>
+                                <a href="https://github.com/Kritarth-Dandapat" target="_blank">GitHub</a> |
+                                <a href="https://x.com/Kritarth25" target="_blank">Twitter</a> |
+                                <a href="https://www.linkedin.com/in/kritarth-dandapat/" target="_blank">LinkedIn</a> |
+                                <a href="https://meritpages.com/kritarth" target="_blank">Merit Pages</a>
                             </p>
                         </div>
                     </div>
@@ -535,6 +775,520 @@
             </div>
         </div>
     </footer>
+
+    <!-- Experience Modals -->
+    <div id="research-assistant-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('research-assistant')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Research Assistant</h2>
+                <h3 class="modal-subtitle">Embedded Sensing and Computing (ESC) Group, University at Buffalo</h3>
+                <p class="modal-dates">July 2024 - Present</p>
+            </div>
+            <div class="modal-body">
+                <h4>Lab Overview</h4>
+                <p>The ESC group at the University at Buffalo delves into advanced research topics situated at the crossroads of hardware/architecture, operating systems, algorithms, human factors, and their applicability in healthcare, manufacturing, and cybersecurity domains. Our research undertakings encompass a broad spectrum, ranging from the development of hardware/software foundations to the construction of pragmatic computer systems.</p>
+                
+                <h4>Project Overview</h4>
+                <p>Working on cutting-edge research in dental health technology, specifically focusing on AI-driven diagnostic tools and mobile applications for orthodontic assessment.</p>
+                
+                <h4>Key Responsibilities</h4>
+                <ul>
+                    <li><strong>AI Model Development:</strong> Creating deep learning models for accurate orthodontic scoring using depth sensors and computer vision techniques</li>
+                    <li><strong>Dental Health Application:</strong> Developing comprehensive AI-driven models that enhance diagnostic accuracy and improve user engagement</li>
+                    <li><strong>Data Visualization:</strong> Implementing interactive features to visualize dental health progress over time</li>
+                    <li><strong>Personalized Recommendations:</strong> Building systems that provide tailored health recommendations based on user data</li>
+                    <li><strong>Cross-Platform Development:</strong> Building both mobile (React Native) and web (React) applications</li>
+                </ul>
+                
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>React Native for mobile development</li>
+                    <li>React.js for web applications</li>
+                    <li>Python for AI/ML model development</li>
+                    <li>Computer Vision libraries</li>
+                    <li>Depth sensor integration</li>
+                </ul>
+                
+                <h4>Impact</h4>
+                <p>This research contributes to the advancement of digital health technologies, potentially improving access to dental care through innovative AI-powered diagnostic tools.</p>
+                
+                <h4>Lab Information</h4>
+                <p>Learn more about the ESC Group: <a href="https://cse.buffalo.edu/~wenyaoxu/esc.html" target="_blank" class="github-link"><i class="fas fa-external-link-alt"></i> ESC Group Website</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="tutor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('tutor')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Tutor & Peer-Assisted Leader</h2>
+                <h3 class="modal-subtitle">Tutoring & Academic Support Services, University at Buffalo</h3>
+                <p class="modal-dates">August 2024 - Present</p>
+            </div>
+            <div class="modal-body">
+                <h4>Role Overview</h4>
+                <p>Serving as both a tutor and Peer-Assisted Learning (PAL) leader, helping students master statistical concepts through interactive sessions and personalized support.</p>
+                
+                <h4>Key Responsibilities</h4>
+                <ul>
+                    <li><strong>Interactive Sessions:</strong> Conducting two 1-hour interactive sessions per week focused on Statistics</li>
+                    <li><strong>Performance Improvement:</strong> Achieving 30% improvement in student understanding based on quiz performance and feedback</li>
+                    <li><strong>Concept Reinforcement:</strong> Providing in-depth explanations and answering student queries during PAL sessions</li>
+                    <li><strong>Assessment Support:</strong> Helping students prepare for exams and assignments</li>
+                    <li><strong>Peer Mentoring:</strong> Serving as a role model and mentor for fellow students</li>
+                </ul>
+                
+                <h4>Teaching Methods</h4>
+                <ul>
+                    <li>Interactive problem-solving sessions</li>
+                    <li>Real-world application examples</li>
+                    <li>Step-by-step concept breakdowns</li>
+                    <li>Group discussions and collaborative learning</li>
+                    <li>Individual consultation sessions</li>
+                </ul>
+                
+                <h4>Impact</h4>
+                <p>Helped numerous students improve their statistical understanding and academic performance, contributing to the overall success of the university's academic support program.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="nsdc-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nsdc')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Founder & Vice President</h2>
+                <h3 class="modal-subtitle">UB National Student Data Corps</h3>
+                <p class="modal-dates">October 2023 - May 2024</p>
+            </div>
+            <div class="modal-body">
+                <h4>Organization Overview</h4>
+                <p>Co-founded and led the University at Buffalo chapter of the National Student Data Corps, a nationwide initiative to promote data science education and collaboration among students.</p>
+                
+                <h4>Key Achievements</h4>
+                <ul>
+                    <li><strong>Website Development:</strong> Led the complete development and launch of the NSDC website, significantly improving event coordination and member communication</li>
+                    <li><strong>Team Leadership:</strong> Organized and facilitated collaborative website development, ensuring effective project planning and execution</li>
+                    <li><strong>Event Management:</strong> Planned and executed various data science workshops and networking events</li>
+                    <li><strong>Community Building:</strong> Established a strong network of data science enthusiasts at UB</li>
+                </ul>
+                
+                <h4>Technical Contributions</h4>
+                <ul>
+                    <li>Full-stack website development</li>
+                    <li>Event management system implementation</li>
+                    <li>Member communication platform</li>
+                    <li>Resource sharing and documentation systems</li>
+                </ul>
+                
+                <h4>Leadership Skills Developed</h4>
+                <ul>
+                    <li>Project management and coordination</li>
+                    <li>Team collaboration and communication</li>
+                    <li>Strategic planning and execution</li>
+                    <li>Community engagement and outreach</li>
+                </ul>
+                
+                <h4>Impact</h4>
+                <p>Successfully established a thriving data science community at UB, providing students with opportunities to learn, collaborate, and grow in the field of data science.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modals -->
+    <div id="people-counting-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('people-counting')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">People Counting using CSRNet</h2>
+                <p class="modal-dates">Deep Learning & Computer Vision Project</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>Developed a sophisticated deep learning system for accurate people counting in dense crowd scenarios, addressing the challenges of occlusion and varying crowd densities.</p>
+                
+                <h4>Technical Implementation</h4>
+                <ul>
+                    <li><strong>CSRNet Architecture:</strong> Implemented the Crowd Scene Regression Network for robust crowd counting</li>
+                    <li><strong>Occlusion Handling:</strong> Designed algorithms to handle partial visibility and overlapping individuals</li>
+                    <li><strong>Multi-scale Processing:</strong> Utilized different resolution inputs to capture both local and global crowd patterns</li>
+                    <li><strong>Real-time Processing:</strong> Optimized for live video stream analysis with minimal latency</li>
+                </ul>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Accurate counting in dense crowds (100+ people)</li>
+                    <li>Robust performance under varying lighting conditions</li>
+                    <li>Real-time processing capabilities</li>
+                    <li>Cross-platform compatibility</li>
+                    <li>Comprehensive evaluation metrics</li>
+                </ul>
+                
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>PyTorch for deep learning framework</li>
+                    <li>OpenCV for image processing</li>
+                    <li>CSRNet architecture implementation</li>
+                    <li>CUDA for GPU acceleration</li>
+                    <li>Python for backend processing</li>
+                </ul>
+                
+                <h4>Results & Impact</h4>
+                <p>Achieved state-of-the-art performance on standard crowd counting datasets, with potential applications in security, retail analytics, and public safety monitoring.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="emotion-detection-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('emotion-detection')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Human Emotion Detection</h2>
+                <p class="modal-dates">Computer Vision & AI Project</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>Engineered a comprehensive emotion detection system that combines multiple deep learning architectures to accurately classify human emotions from facial expressions.</p>
+                
+                <h4>Architecture Design</h4>
+                <ul>
+                    <li><strong>CNN Implementation:</strong> Custom convolutional neural network for feature extraction</li>
+                    <li><strong>ResNet-34 Integration:</strong> Leveraged residual connections for improved gradient flow</li>
+                    <li><strong>Vision Transformer (ViT):</strong> Applied attention mechanisms for global feature understanding</li>
+                    <li><strong>Ensemble Approach:</strong> Combined predictions from multiple models for robustness</li>
+                </ul>
+                
+                <h4>Performance Metrics</h4>
+                <ul>
+                    <li>Overall accuracy: 87.5%</li>
+                    <li>Support for 7 emotion categories</li>
+                    <li>Real-time inference capabilities</li>
+                    <li>Robust performance across different demographics</li>
+                </ul>
+                
+                <h4>Technical Stack</h4>
+                <ul>
+                    <li>PyTorch for model development</li>
+                    <li>TensorFlow for comparison experiments</li>
+                    <li>OpenCV for face detection and preprocessing</li>
+                    <li>NumPy for numerical computations</li>
+                    <li>Matplotlib for visualization</li>
+                </ul>
+                
+                <h4>Applications</h4>
+                <p>Potential applications include mental health monitoring, human-computer interaction, marketing research, and accessibility tools for emotion recognition.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="pathfinding-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('pathfinding')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Pathfinding Visualizer</h2>
+                <p class="modal-dates">Algorithm Visualization Project</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>Developed an interactive pathfinding algorithm visualizer that demonstrates various search algorithms in real-time, with a focus on the A* algorithm and its optimization techniques.</p>
+                
+                <h4>Core Features</h4>
+                <ul>
+                    <li><strong>Interactive Grid:</strong> Clickable grid system for setting start, end, and obstacle points</li>
+                    <li><strong>Real-time Visualization:</strong> Step-by-step algorithm execution with visual feedback</li>
+                    <li><strong>Multiple Algorithms:</strong> Implementation of A*, Dijkstra's, and BFS algorithms</li>
+                    <li><strong>Customizable Parameters:</strong> Adjustable grid size, animation speed, and heuristic functions</li>
+                    <li><strong>Path Optimization:</strong> Visual comparison of different pathfinding approaches</li>
+                </ul>
+                
+                <h4>Technical Implementation</h4>
+                <ul>
+                    <li>Pygame for graphics and user interaction</li>
+                    <li>Custom A* algorithm with multiple heuristics</li>
+                    <li>Efficient data structures for path computation</li>
+                    <li>Modular design for easy algorithm addition</li>
+                    <li>Performance optimization for large grids</li>
+                </ul>
+                
+                <h4>Educational Value</h4>
+                <p>This project serves as an excellent educational tool for understanding pathfinding algorithms, data structures, and algorithm visualization techniques.</p>
+                
+                <h4>Future Enhancements</h4>
+                <ul>
+                    <li>Support for weighted graphs</li>
+                    <li>3D visualization capabilities</li>
+                    <li>Algorithm performance comparison</li>
+                    <li>Export functionality for educational materials</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="pss-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('pss')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Personalized Student Shell (PSS)</h2>
+                <p class="modal-dates">Command Line Interface Project</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>Designed and implemented a comprehensive command-line shell specifically tailored for students, incorporating educational features, productivity tools, and gamification elements.</p>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li><strong>Custom Aliases:</strong> Pre-defined shortcuts for common student tasks</li>
+                    <li><strong>Command History:</strong> Enhanced history with search and filtering capabilities</li>
+                    <li><strong>Auto-completion:</strong> Intelligent command and file path completion</li>
+                    <li><strong>Code Execution:</strong> Direct execution of programming assignments</li>
+                    <li><strong>Interactive Tutorials:</strong> Built-in learning modules for shell commands</li>
+                    <li><strong>Gamification:</strong> Achievement system and progress tracking</li>
+                </ul>
+                
+                <h4>Educational Components</h4>
+                <ul>
+                    <li>Step-by-step command tutorials</li>
+                    <li>Interactive quizzes and challenges</li>
+                    <li>Progress tracking and achievements</li>
+                    <li>Contextual help and documentation</li>
+                    <li>Error handling with educational feedback</li>
+                </ul>
+                
+                <h4>Technical Architecture</h4>
+                <ul>
+                    <li>Python for core shell functionality</li>
+                    <li>SQLite for user progress storage</li>
+                    <li>JSON for configuration management</li>
+                    <li>Modular design for easy feature addition</li>
+                    <li>Cross-platform compatibility</li>
+                </ul>
+                
+                <h4>Impact</h4>
+                <p>This project helps students develop essential command-line skills while making the learning process engaging and interactive, bridging the gap between theoretical knowledge and practical application.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ub-hacking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('ub-hacking')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">UB Hacking Classifier Web App</h2>
+                <p class="modal-dates">Hackathon Project - Web Development</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>Co-developed a comprehensive web application during the UB Hacking hackathon, focusing on classification tasks with a modern, responsive user interface and robust backend architecture.</p>
+                
+                <h4>Development Role</h4>
+                <ul>
+                    <li><strong>Backend Architecture:</strong> Designed and implemented the server-side logic</li>
+                    <li><strong>Database Design:</strong> Created efficient data models and relationships</li>
+                    <li><strong>API Development:</strong> Built RESTful APIs for data processing</li>
+                    <li><strong>Frontend Integration:</strong> Connected UI components with backend services</li>
+                </ul>
+                
+                <h4>Technical Stack</h4>
+                <ul>
+                    <li><strong>Frontend:</strong> React.js with Material-UI (MUI) components</li>
+                    <li><strong>Backend:</strong> Node.js with Express.js framework</li>
+                    <li><strong>Database:</strong> Firebase Firestore for real-time data</li>
+                    <li><strong>Styling:</strong> CSS3 with responsive design principles</li>
+                    <li><strong>Deployment:</strong> Firebase Hosting for web deployment</li>
+                </ul>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Responsive design for all device sizes</li>
+                    <li>Real-time data processing and visualization</li>
+                    <li>User authentication and data persistence</li>
+                    <li>Interactive classification interface</li>
+                    <li>Results export and sharing capabilities</li>
+                </ul>
+                
+                <h4>Hackathon Experience</h4>
+                <p>Successfully delivered a fully functional application within the hackathon timeframe, demonstrating strong teamwork, rapid prototyping skills, and technical problem-solving abilities.</p>
+                
+                <h4>Learning Outcomes</h4>
+                <ul>
+                    <li>Rapid development under time constraints</li>
+                    <li>Team collaboration and version control</li>
+                    <li>Full-stack development integration</li>
+                    <li>User experience design principles</li>
+                    <li>Cloud deployment and hosting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="oralscan-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('oralscan')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">OralScan: AI-Powered Dental Care</h2>
+                <p class="modal-dates">Mobile & Web App | Healthcare AI | 2023-2024</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>OralScan is an AI-powered platform that provides accessible, real-time oral health diagnostics and care recommendations, especially for seniors and underserved communities. The app leverages advanced AI models to detect oral health issues from smartphone images, offering instant feedback and personalized care guidance.</p>
+                <h4>Key Features</h4>
+                <ul>
+                    <li>AI-driven diagnostics for oral health issues (cavities, gingivitis, ulcers, etc.)</li>
+                    <li>Mobile accessibility (Android & iOS) for at-home dental screening</li>
+                    <li>Real-time analysis and personalized care recommendations</li>
+                    <li>Guided camera system for easy image capture</li>
+                    <li>Web-based dashboard for admin and research monitoring</li>
+                    <li>Secure server for data storage and fairness assessment</li>
+                </ul>
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>React Native (mobile app)</li>
+                    <li>React (web dashboard)</li>
+                    <li>Python (AI/ML backend)</li>
+                    <li>YOLO, SAM, ResNet50-based CNN for image analysis</li>
+                    <li>Secure server and relational database</li>
+                </ul>
+                <h4>My Role</h4>
+                <ul>
+                    <li>Developed and tested the mobile and web app UI</li>
+                    <li>Integrated AI model APIs for real-time diagnostics</li>
+                    <li>Collaborated with a multidisciplinary team of researchers, doctors, and engineers</li>
+                    <li>Conducted user testing and contributed to app feature refinement</li>
+                </ul>
+                <h4>Impact</h4>
+                <ul>
+                    <li>Empowered seniors and rural/low-income populations with accessible dental care</li>
+                    <li>Enabled early detection and prevention of oral health issues</li>
+                    <li>Bridged healthcare gaps with cost-effective, real-time solutions</li>
+                </ul>
+                <h4>Learn More</h4>
+                <a href="https://oralscan.health/" target="_blank" class="github-link"><i class="fas fa-globe"></i> oralscan.health</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="peng-lab-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('peng-lab')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Undergraduate Researcher</h2>
+                <h3 class="modal-subtitle">Peng Research Lab, University at Buffalo</h3>
+                <p class="modal-dates">January 2025 - Present</p>
+            </div>
+            <div class="modal-body">
+                <h4>Lab Overview</h4>
+                <p>The Peng Research Lab at the University at Buffalo focuses on working at the nexus of 🤖 (AI) + ⚛️ (Quantum Computing) →⚡ (Energy Systems) + 🧪 (Chemistry). The lab explores cutting-edge research at the intersection of artificial intelligence, quantum computing, and energy systems.</p>
+                
+                <h4>Research Focus</h4>
+                <ul>
+                    <li><strong>AI Integration:</strong> Developing AI algorithms and machine learning models for complex system optimization</li>
+                    <li><strong>Quantum Computing:</strong> Exploring quantum algorithms and their applications in energy systems</li>
+                    <li><strong>Energy Systems:</strong> Researching sustainable energy solutions and optimization</li>
+                    <li><strong>Chemical Applications:</strong> Applying computational methods to chemical and materials science</li>
+                </ul>
+                
+                <h4>Key Responsibilities</h4>
+                <ul>
+                    <li><strong>Research Contributions:</strong> Contributing to the lab's mission of advancing 🤖 + ⚛️ →⚡ + 🧪 technologies</li>
+                    <li><strong>Collaboration:</strong> Working closely with graduate students and faculty on innovative research projects</li>
+                    <li><strong>Algorithm Development:</strong> Implementing and testing novel computational approaches</li>
+                    <li><strong>Data Analysis:</strong> Processing and analyzing research data using advanced computational methods</li>
+                </ul>
+                
+                <h4>Technologies & Skills</h4>
+                <ul>
+                    <li>Machine Learning and AI algorithms</li>
+                    <li>Quantum computing frameworks</li>
+                    <li>Energy system modeling</li>
+                    <li>Computational chemistry tools</li>
+                    <li>Python and scientific computing libraries</li>
+                </ul>
+                
+                <h4>Impact</h4>
+                <p>This research contributes to the advancement of cutting-edge technologies that bridge AI, quantum computing, and energy systems, potentially leading to breakthroughs in sustainable energy and computational chemistry.</p>
+                
+                <h4>Lab Information</h4>
+                <p>Learn more about the Peng Research Lab: <a href="https://ubwp.buffalo.edu/jiayu-peng-lab/members/" target="_blank" class="github-link"><i class="fas fa-external-link-alt"></i> Peng Research Lab Website</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="marine-guardian-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('marine-guardian')">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Marine Guardian: Ship Detection in Satellite Imagery</h2>
+                <p class="modal-dates">Computer Vision & Deep Learning Project | CSE 473 Final Project</p>
+            </div>
+            <div class="modal-body">
+                <h4>Project Overview</h4>
+                <p>The Marine Guardian project aims to develop a model for detecting ships in satellite imagery, crucial for maritime security, environmental monitoring, and naval operations. The goal was to establish baseline performance using existing models and then explore first principles of computer vision for faster, real-time detection.</p>
+                
+                <h4>Technical Challenge</h4>
+                <p>The project addressed the trade-off between accuracy and speed in ship detection. While well-defined CNNs provide good accuracy, they lack the speed needed for live monitoring. The approach was inspired by face detection, where Haar filters provide faster detection than CNNs.</p>
+                
+                <h4>Dataset & Methodology</h4>
+                <ul>
+                    <li><strong>Dataset:</strong> Ships in Satellite Imagery from Kaggle (1000 ship images, 3000 no-ship images)</li>
+                    <li><strong>Challenge:</strong> Dataset labeling inconsistencies with partial ships classified as "no-ship"</li>
+                    <li><strong>Approach:</strong> Combined transfer learning with first principles of computer vision</li>
+                </ul>
+                
+                <h4>Technical Implementation</h4>
+                <ul>
+                    <li><strong>Baseline Models:</strong> Basic CNN, EfficientNetB0, MobileNetV2</li>
+                    <li><strong>Transfer Learning:</strong> Used pre-trained EfficientNet as encoder with custom decoder</li>
+                    <li><strong>Unsupervised Learning:</strong> ResNet50 + KMeans clustering for dataset validation</li>
+                    <li><strong>First Principles:</strong> Roundness-based classification using geometric properties</li>
+                </ul>
+                
+                <h4>Key Results</h4>
+                <ul>
+                    <li><strong>MobileNetV2:</strong> 98.72% accuracy, 99.31% validation accuracy (best performance)</li>
+                    <li><strong>EfficientNetB0:</strong> 74.25% accuracy (affected by dataset issues)</li>
+                    <li><strong>Roundness Algorithm:</strong> Detected 2234 ship images (close to expected 2000)</li>
+                    <li><strong>Speed Optimization:</strong> Fast detection using geometric properties for real-time monitoring</li>
+                </ul>
+                
+                <h4>Technical Innovations</h4>
+                <ul>
+                    <li><strong>Roundness Calculation:</strong> Developed algorithm using area-to-perimeter ratio for shape classification</li>
+                    <li><strong>Dataset Validation:</strong> Uncovered and addressed labeling inconsistencies</li>
+                    <li><strong>Hybrid Approach:</strong> Combined deep learning with traditional computer vision techniques</li>
+                    <li><strong>Real-time Processing:</strong> Optimized for live satellite imagery monitoring</li>
+                </ul>
+                
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>Python with OpenCV for image processing</li>
+                    <li>TensorFlow/Keras for deep learning models</li>
+                    <li>EfficientNet, MobileNetV2, ResNet50 architectures</li>
+                    <li>KMeans clustering for unsupervised learning</li>
+                    <li>Geometric algorithms for roundness calculation</li>
+                    <li>Google Colab for GPU-accelerated training</li>
+                </ul>
+                
+                <h4>Impact & Applications</h4>
+                <p>This project demonstrates the importance of dataset validation and the effectiveness of combining modern deep learning with traditional computer vision techniques. The roundness-based approach provides a fast, efficient method for ship detection that can be deployed in real-time maritime monitoring systems.</p>
+                
+                <h4>Lessons Learned</h4>
+                <ul>
+                    <li>Thorough dataset validation is crucial before model development</li>
+                    <li>Simple geometric solutions can outperform complex neural networks in specific applications</li>
+                    <li>Documentation and organization of experimental results is essential</li>
+                    <li>First principles thinking can lead to unexpected but effective solutions</li>
+                </ul>
+                
+                <h4>Dataset Reference</h4>
+                <a href="https://www.kaggle.com/datasets/rhammell/ships-in-satellite-imagery" target="_blank" class="github-link">
+                    <i class="fas fa-database"></i>
+                    Ships in Satellite Imagery Dataset
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
