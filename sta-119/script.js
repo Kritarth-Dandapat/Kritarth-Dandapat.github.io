@@ -55,6 +55,27 @@ class TutoringWebsite {
                 this.switchTab(e.target.dataset.semester);
             });
         });
+
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const clearSearchBtn = document.getElementById('clear-search');
+        const sortSelect = document.getElementById('sort-select');
+
+        searchInput.addEventListener('input', (e) => {
+            this.handleSearch(e.target.value);
+            this.toggleClearButton(e.target.value);
+        });
+
+        clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            this.handleSearch('');
+            this.toggleClearButton('');
+            searchInput.focus();
+        });
+
+        sortSelect.addEventListener('change', (e) => {
+            this.handleSort(e.target.value);
+        });
     }
 
     async loadData() {
@@ -191,6 +212,119 @@ class TutoringWebsite {
     async refresh() {
         await this.loadData();
         this.renderContent();
+    }
+
+    handleSearch(searchTerm) {
+        const searchResultsInfo = document.getElementById('search-results-info');
+        const resultsCount = document.getElementById('results-count');
+
+        if (!searchTerm.trim()) {
+            this.renderSessions();
+            searchResultsInfo.style.display = 'none';
+            return;
+        }
+
+        const filteredSessions = this.filterSessions(searchTerm);
+        this.renderFilteredSessions(filteredSessions);
+
+        resultsCount.textContent = filteredSessions.length;
+        searchResultsInfo.style.display = 'block';
+    }
+
+    filterSessions(searchTerm) {
+        const term = searchTerm.toLowerCase();
+        const allSessions = [];
+
+        Object.keys(this.data.sessions).forEach(semester => {
+            this.data.sessions[semester].forEach(session => {
+                allSessions.push({ ...session, semester });
+            });
+        });
+
+        return allSessions.filter(session => {
+            const title = session.title.toLowerCase();
+            const date = new Date(session.date).toLocaleDateString('en-US', {
+                weekday: 'long',
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            }).toLowerCase();
+
+            return title.includes(term) || date.includes(term);
+        });
+    }
+
+    renderFilteredSessions(filteredSessions) {
+        // Clear existing content
+        document.querySelectorAll('.sessions-grid').forEach(container => {
+            container.innerHTML = '';
+        });
+
+        if (filteredSessions.length === 0) {
+            document.querySelectorAll('.sessions-grid').forEach(container => {
+                container.innerHTML = '<div class="empty-state"><i class="fas fa-search"></i><p>No sessions found matching your search</p></div>';
+            });
+            return;
+        }
+
+        // Group by semester
+        const groupedSessions = {};
+        filteredSessions.forEach(session => {
+            if (!groupedSessions[session.semester]) {
+                groupedSessions[session.semester] = [];
+            }
+            groupedSessions[session.semester].push(session);
+        });
+
+        // Render each semester's sessions
+        Object.keys(groupedSessions).forEach(semester => {
+            const container = document.getElementById(`${semester}-sessions`);
+            if (container) {
+                container.innerHTML = groupedSessions[semester].map(session => this.renderSessionCard(session)).join('');
+            }
+        });
+    }
+
+    handleSort(sortOption) {
+        Object.keys(this.data.sessions).forEach(semester => {
+            const sessions = [...this.data.sessions[semester]];
+            const sortedSessions = this.sortSessions(sessions, sortOption);
+            this.data.sessions[semester] = sortedSessions;
+        });
+
+        // Re-render if there's no active search
+        const searchInput = document.getElementById('search-input');
+        if (!searchInput.value.trim()) {
+            this.renderSessions();
+        } else {
+            this.handleSearch(searchInput.value);
+        }
+    }
+
+    sortSessions(sessions, sortOption) {
+        return sessions.sort((a, b) => {
+            switch (sortOption) {
+                case 'date-desc':
+                    return new Date(b.date) - new Date(a.date);
+                case 'date-asc':
+                    return new Date(a.date) - new Date(b.date);
+                case 'title-asc':
+                    return a.title.localeCompare(b.title);
+                case 'title-desc':
+                    return b.title.localeCompare(a.title);
+                default:
+                    return 0;
+            }
+        });
+    }
+
+    toggleClearButton(value) {
+        const clearBtn = document.getElementById('clear-search');
+        if (value.trim()) {
+            clearBtn.classList.add('show');
+        } else {
+            clearBtn.classList.remove('show');
+        }
     }
 }
 
