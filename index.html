@@ -54,6 +54,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- EmailJS for Contact Form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -121,7 +124,7 @@
             <div class="nav-logo">
                 <h2><a href="#home" aria-label="Go to homepage">KD</a></h2>
             </div>
-            <ul class="nav-menu" role="menubar">
+            <ul class="nav-menu" id="nav-menu" role="menubar">
                 <li class="nav-item" role="none">
                     <a href="#home" class="nav-link" role="menuitem" aria-current="page">Home</a>
                 </li>
@@ -150,103 +153,66 @@
                 <span class="bar" aria-hidden="true"></span>
             </button>
         </div>
+        <div class="nav-overlay"></div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero" role="banner">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Kritarth Dandapat</span></h1>
-                <p class="hero-subtitle">AI Developer & Research Assistant</p>
-                <p class="hero-description">
-                    I am an AI developer with previous experience in full-stack development, driven by a deep passion for problem-solving and innovation in technology. My strong foundation in mathematics fuels my analytical thinking and technical expertise.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary" aria-label="Get in touch with me">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary" aria-label="View my projects">View Projects</a>
-                </div>
+      <div class="hero-flex">
+        <div class="hero-banner">
+          <img src="./assets/my-photo.jpeg" alt="Kritarth Dandapat - AI Developer and Research Assistant" class="profile-banner-photo" loading="eager">
+          <div class="profile-banner-info">
+            <h1 class="hero-title">Kritarth Dandapat</h1>
+            <p class="hero-subtitle">AI Developer & Research Assistant</p>
+            <p class="hero-affiliation">University at Buffalo</p>
+            <div class="profile-banner-links">
+              <a href="./assets/CV.pdf" target="_blank" class="btn btn-primary profile-banner-btn" aria-label="Download my resume (PDF)">
+                <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
+              </a>
+              <a href="./assets/transcript.pdf" target="_blank" class="btn btn-secondary profile-banner-btn" aria-label="View my academic transcript (PDF)">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Transcript
+              </a>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-avatar">
-                        <img src="./assets/my-photo.jpeg" alt="Kritarth Dandapat - AI Developer and Research Assistant" class="profile-image" loading="eager">
-                        <div class="profile-overlay" aria-hidden="true">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="profile-info">
-                        <h3>AI Developer & Research Assistant</h3>
-                        <p>University at Buffalo</p>
-                        <div class="profile-links">
-                            <a href="./assets/Resume.pdf" target="_blank" class="profile-link" aria-label="Download my resume (PDF)">
-                                <i class="fas fa-file-pdf" aria-hidden="true"></i>
-                                Resume
-                            </a>
-                            <a href="./assets/transcript.pdf" target="_blank" class="profile-link" aria-label="View my academic transcript (PDF)">
-                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                                Transcript
-                            </a>
-                        </div>
-                        <div class="social-links" role="list" aria-label="Social media links">
-                            <a href="mailto:kritarth@buffalo.edu" class="social-link" role="listitem" aria-label="Send me an email">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                            </a>
-                            <a href="tel:+17166120016" class="social-link" role="listitem" aria-label="Call me">
-                                <i class="fas fa-phone" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.instagram.com/kritarth_dandapat/" target="_blank" class="social-link" role="listitem" aria-label="Follow me on Instagram">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://github.com/Kritarth-Dandapat" target="_blank" class="social-link" role="listitem" aria-label="View my GitHub profile">
-                                <i class="fab fa-github" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://x.com/Kritarth25" target="_blank" class="social-link" role="listitem" aria-label="Follow me on Twitter">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/kritarth-dandapat/" target="_blank" class="social-link" role="listitem" aria-label="Connect with me on LinkedIn">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://meritpages.com/kritarth" target="_blank" class="social-link" role="listitem" aria-label="View my achievements on Merit Pages">
-                                <i class="fas fa-award" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="profile-banner-socials">
+              <a href="mailto:kritarth@buffalo.edu" class="social-link" aria-label="Send me an email"><i class="fas fa-envelope"></i></a>
+              <a href="tel:+17166120016" class="social-link" aria-label="Call me"><i class="fas fa-phone"></i></a>
+              <a href="https://www.instagram.com/kritarth_dandapat/" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/Kritarth-Dandapat" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://x.com/Kritarth25" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/kritarth-dandapat/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://meritpages.com/kritarth" target="_blank" class="social-link" aria-label="Merit Pages"><i class="fas fa-award"></i></a>
             </div>
+          </div>
         </div>
+        <div class="hero-about-edu-card">
+          <div class="about-text">
+            <p>Hi, and welcome! This website is my digital home to showcase my journey, projects, and interests in AI, software development, and research. Here, you'll find highlights of my academic work, hands-on projects, and the things I'm most passionate about.</p>
+            <p>Some of my recent work includes developing AI-driven models for dental health, building web and mobile apps, and collaborating with amazing teams at the University at Buffalo. I'm always eager to learn, create, and share new ideas—thanks for stopping by!</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about" role="region" aria-labelledby="about-title">
-        <div class="container">
-            <h2 id="about-title" class="section-title">About Me</h2>
-            <div class="about-space-container">
-                <!-- Floating Icons -->
-                <i class="fas fa-laptop-code space-icon icon-1" aria-hidden="true"></i>
-                <i class="fas fa-bullseye space-icon icon-2" aria-hidden="true"></i>
-                <i class="fas fa-rocket space-icon icon-3" aria-hidden="true"></i>
-                <i class="fas fa-wrench space-icon icon-4" aria-hidden="true"></i>
-                <div class="space-planet planet-1" aria-hidden="true"></div>
-                <div class="space-planet planet-2" aria-hidden="true"></div>
-                
-                <!-- Existing Content -->
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>I am an AI developer with previous experience in full-stack development, driven by a deep passion for problem-solving and innovation in technology. My strong foundation in mathematics fuels my analytical thinking and technical expertise in software development.</p>
-                        <p>I am currently a Research Assistant at the University at Buffalo, developing AI-driven models for dental health applications and building mobile and web solutions. I am proficient in Python and JavaScript, and experienced with React, React Native, Django, PyTorch, and TensorFlow.</p>
-                    </div>
-                    <div class="education-card">
-                        <div class="education-item">
-                            <h3>Education</h3>
-                            <h4>University at Buffalo, SUNY</h4>
-                            <p class="degree">Bachelors, Computer Science</p>
-                            <p class="minor">Minor: Statistics</p>
-                            <p class="dates">August 2023 - June 2026</p>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="aboutme-card">
+          <div class="aboutme-text">
+            <p>I am an AI developer with previous experience in full-stack development, driven by a deep passion for problem-solving and innovation in technology. My strong foundation in mathematics fuels my analytical thinking and technical expertise in software development.</p>
+            <p>I am currently a Research Assistant at the University at Buffalo, developing AI-driven models for dental health applications and building mobile and web solutions. I am proficient in Python and JavaScript, and experienced with React, React Native, Django, PyTorch, and TensorFlow.</p>
+          </div>
+          <div class="aboutme-education">
+            <h3>Education</h3>
+            <div class="aboutme-edu-details">
+              <div class="aboutme-edu-school">University at Buffalo, SUNY</div>
+              <div class="aboutme-edu-degree">Bachelors, Computer Science</div>
+              <div class="aboutme-edu-minor">Minor: Statistics</div>
+              <div class="aboutme-edu-dates">August 2023 - June 2026</div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
@@ -864,8 +830,14 @@
                             <label for="message" class="sr-only">Your Message</label>
                             <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" aria-label="Send message">Send Message</button>
+                        <button type="submit" class="btn btn-primary" aria-label="Send message" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
                     </form>
+                    <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 6px;"></div>
                 </div>
             </div>
         </div>

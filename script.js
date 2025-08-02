@@ -14,14 +14,22 @@ if ('serviceWorker' in navigator) {
 // Mobile Navigation Toggle with Accessibility
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const navOverlay = document.querySelector('.nav-overlay');
+
+function closeMobileMenu() {
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    navMenu.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
 
 hamburger.addEventListener('click', () => {
     const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', !isExpanded);
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-
-    // Prevent body scroll when menu is open
+    navOverlay.classList.toggle('active');
     if (navMenu.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
     } else {
@@ -30,32 +38,24 @@ hamburger.addEventListener('click', () => {
 });
 
 // Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    hamburger.setAttribute('aria-expanded', 'false');
-    navMenu.classList.remove('active');
-    document.body.style.overflow = '';
-}));
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', closeMobileMenu));
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        hamburger.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-        navMenu.classList.remove('active');
-        document.body.style.overflow = '';
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target) && !navOverlay.contains(e.target)) {
+        closeMobileMenu();
     }
 });
 
 // Close mobile menu on escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-        navMenu.classList.remove('active');
-        document.body.style.overflow = '';
+        closeMobileMenu();
     }
 });
+
+// Close mobile menu when clicking the overlay
+navOverlay.addEventListener('click', closeMobileMenu);
 
 // Smooth scrolling for navigation links with accessibility
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -333,13 +333,49 @@ document.addEventListener('DOMContentLoaded', () => {
     initializePerformanceOptimizations();
 });
 
+// Initialize EmailJS
+(function () {
+    emailjs.init("sAOSf-TD2UxQdqPWX"); // Your EmailJS public key
+    console.log('EmailJS initialized with public key:', "sAOSf-TD2UxQdqPWX");
+})();
+
+// Test function for EmailJS (you can call this from browser console)
+window.testEmailJS = async function () {
+    try {
+        console.log('Testing EmailJS...');
+        const testParams = {
+            from_name: 'Test User',
+            from_email: 'test@example.com',
+            subject: 'Test Message',
+            message: 'This is a test message from EmailJS',
+            to_name: 'Kritarth Dandapat',
+            to_email: 'kritarth@buffalo.edu',
+            reply_to: 'test@example.com'
+        };
+
+        const response = await emailjs.send(
+            'service_wz071t4',
+            'template_8da12zr',
+            testParams
+        );
+
+        console.log('Test email sent successfully:', response);
+        alert('Test email sent! Check your inbox.');
+    } catch (error) {
+        console.error('Test email failed:', error);
+        alert('Test email failed: ' + error.message);
+    }
+};
+
 // Form submission handler
 async function handleFormSubmit(e) {
     e.preventDefault();
 
     const form = e.target;
-    const formData = new FormData(form);
-    const submitButton = form.querySelector('button[type="submit"]');
+    const submitButton = document.getElementById('submitBtn');
+    const btnText = submitButton.querySelector('.btn-text');
+    const btnLoading = submitButton.querySelector('.btn-loading');
+    const formMessage = document.getElementById('formMessage');
 
     // Validate form
     if (!validateForm(form)) {
@@ -347,27 +383,89 @@ async function handleFormSubmit(e) {
     }
 
     // Show loading state
-    const originalText = submitButton.textContent;
-    submitButton.textContent = 'Sending...';
+    btnText.style.display = 'none';
+    btnLoading.style.display = 'inline-flex';
     submitButton.disabled = true;
+    formMessage.style.display = 'none';
 
     try {
-        // Simulate form submission (replace with actual endpoint)
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Prepare template parameters
+        const templateParams = {
+            from_name: form.name.value,
+            from_email: form.email.value,
+            subject: form.subject.value,
+            message: form.message.value,
+            to_name: 'Kritarth Dandapat',
+            to_email: 'kritarth@buffalo.edu', // Recipient email
+            reply_to: form.email.value // This allows you to reply directly to the sender
+        };
+
+        // Send email to you (the website owner)
+        console.log('Sending email to website owner...');
+        const response1 = await emailjs.send(
+            'service_wz071t4', // Your EmailJS service ID
+            'template_8da12zr', // Your main template ID
+            templateParams
+        );
+        console.log('Email to owner sent successfully:', response1);
+
+        // Send confirmation email to the sender
+        console.log('Sending confirmation email to sender...');
+        const confirmationParams = {
+            to_name: form.name.value,
+            to_email: form.email.value,
+            from_name: 'Kritarth Dandapat',
+            subject: form.subject.value,
+            message: form.message.value,
+            response_time: '48 hours',
+            reply_to: 'kritarth@buffalo.edu'
+        };
+
+        const response2 = await emailjs.send(
+            'service_wz071t4', // Same service ID
+            'template_p7tl4id', // Confirmation template ID
+            confirmationParams
+        );
+        console.log('Confirmation email sent successfully:', response2);
 
         // Show success message
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        form.reset();
+        formMessage.style.display = 'block';
+        formMessage.style.backgroundColor = 'rgba(0, 191, 255, 0.1)';
+        formMessage.style.border = '1px solid var(--accent-primary)';
+        formMessage.style.color = 'var(--accent-primary)';
+        formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! You\'ll receive a confirmation email shortly, and I\'ll get back to you within 48 hours.';
 
-        // Announce to screen readers
+        form.reset();
         announceToScreenReader('Message sent successfully');
 
     } catch (error) {
-        showNotification('Failed to send message. Please try again.', 'error');
+        console.error('EmailJS Error:', error);
+        console.error('Error details:', {
+            message: error.message,
+            status: error.status,
+            text: error.text
+        });
+
+        // Show error message
+        formMessage.style.display = 'block';
+        formMessage.style.backgroundColor = 'rgba(220, 53, 69, 0.1)';
+        formMessage.style.border = '1px solid #dc3545';
+        formMessage.style.color = '#dc3545';
+
+        let errorMessage = 'Failed to send message. ';
+        if (error.message) {
+            errorMessage += error.message;
+        } else {
+            errorMessage += 'Please try again or contact me directly at kritarth@buffalo.edu';
+        }
+
+        formMessage.innerHTML = `<i class="fas fa-exclamation-circle"></i> ${errorMessage}`;
+
         announceToScreenReader('Failed to send message');
     } finally {
         // Reset button state
-        submitButton.textContent = originalText;
+        btnText.style.display = 'inline';
+        btnLoading.style.display = 'none';
         submitButton.disabled = false;
     }
 }
