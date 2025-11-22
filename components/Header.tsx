@@ -17,8 +17,13 @@ export const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-slate-800 font-serif tracking-tight">
-          K<span className="text-sky-600">.</span> Dandapat
+        <a href="#" className="flex items-center gap-3 text-2xl font-bold text-slate-800 font-serif tracking-tight">
+          <img 
+            src="/data/My%20Studio%20Photo.JPG" 
+            alt="Profile" 
+            className="w-10 h-10 rounded-full object-cover border-2 border-sky-600 shadow-sm"
+          />
+          <span>K<span className="text-sky-600">.</span> Dandapat</span>
         </a>
 
         {/* Desktop Nav */}
@@ -33,7 +38,7 @@ export const Header: React.FC = () => {
             </a>
           ))}
           <a 
-            href="/resume.pdf" 
+            href="/data/CV.pdf" 
             target="_blank"
             download
             className="flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-md hover:bg-sky-700 transition-colors text-sm font-medium shadow-lg shadow-sky-600/20"
@@ -67,7 +72,7 @@ export const Header: React.FC = () => {
               </a>
             ))}
             <a 
-               href="/resume.pdf" 
+               href="/data/CV.pdf" 
                target="_blank"
                download
                className="flex justify-center items-center gap-2 bg-sky-600 text-white px-4 py-3 rounded-md hover:bg-sky-700 transition-colors"
