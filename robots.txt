@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kritarth-dandapat.github.io/sitemap.xml
